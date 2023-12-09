@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  
+  <link rel="stylesheet" type="text/css" href="https://www.se.rit.edu/resources/style-sheets/SEdepartment.css">
+  <link rel="stylesheet" type="text/css" href="swen-a.css">
+
+  
+  <script language="JavaScript">
+  var course_number = ""; // Change this to be the title of the course
+  var course_title = "Foundations of Software Engineering"; // Change this to be the title of the course
+  var section = ""; // Change this to be the title of the course
+  full_title = course_number + " " + course_title;
+  </script><!-- Do not change this -->
+  
+  <script language="JavaScript" src="https://www.se.rit.edu/resources/js/se.js"></script>
+  
+  <script language="JavaScript">
+  document.title = course_number + "" + section + " " + course_title; // No need to change this
+  </script><!-- Feel free to add custom styles if you like, but we'd rather put it in SEDepartment.css if at all possible -->
+  
+</head>
+
+
+
+<body>
+  <header>
+    <a href="http://www.se.rit.edu" alt="Software Engineering Department">
+      <img src="http://www.se.rit.edu/resources/images/se_logo.png">
+    </a>
+    <h1>
+      <script language="JavaScript">
+        document.write(document.title);
+      </script>
+  
+    </h1>
+    <div class="clear"></div>
+  </header>
+  <nav>
+   <ul>
+        <!-- Start of links to share --> 
+
+        <li><a href="index.html">Schedule</a></li>
+        <li><a href="syllabus.html">Syllabus</a></li>
+        <li><a href="project.html">Project</a></li>
+		<li><a href="resources.html">Resources</a></li>
+		<li><a href="https://drive.google.com/drive/folders/1iVlvBL0HSFLZUcB8PW76UkngFz9paKDG?usp=share_link" target="_blank">Lecture Slides</a></li>
+        
+    </ul>
+  </nav>
+  <article></article>
+
+<h1>Project Description</h1>
+
+<p>Your team is tasked with creating an application that utilizes configuration files to display the content of a web page. This page is entirely driven by what is provided via the configuration files. There will be several primary components to this application. 
+
+The basic flow of the application is:
+</p>
+
+<img src="images/ProjectFlow.png" alt="Project Flow">
+
+
+
+<p>Other requirements include:</p>
+
+<ul>
+
+	<li>There are several data input files that are located on remote locations. An API is used to transmit the contents of the files. The APIs should dynamically transfer the item’s content (changing the file should automatically change what is transmitted via the API). Your team will host these files that your application should read in.</li>
+	<li>The input files should be composed of json or XML files that are “fed” into the primary page via an API. You should create an API for each input file. So your application will be interacting with several possible API sources, not the actual files.</li>
+	<li>A random number generator should be provided with an API. This random number will provide guidance regarding which input file should be used to construct the page.</li>
+	<li>You should ensure that the application works using multiple browsers including Chrome, Firefox and Edge. You can use the browser versions that are installed on the lab computers.</li>
+	<li>Requirements elicitation is important. Your team should work with the instructor to create the input files and the output page.</li>
+	<li>The configuration file uses the information from the Input API to build the output screen which is shown to the user.</li>
+	<li>To start, when displaying the page contents you only need to display the input using basic formatting with the information provided via the input files. However, you should confirm this requirement with the customer for R2.</li>
+	<li>When displaying page “items”, you will be responsible for displaying the item type and provided options via the API.</li>
+	<li>The items that will need to be displayed on the output page are:</li>
+	<ul>
+		<li>Paragraph:</li>
+		<li>Dropdown box</li>
+		<li>Radio button</li>
+		<li>True/false</li>
+		<li>Image ← only need to provide link to an image.</li>
+		<li>Textbox </li>
+		<li>Button</li>
+	</ul>
+
+</ul>
+
+
+
+<h3>Notes</h3>
+
+
+<ul>
+	<li>You may use whatever technology stack that you would like. The focus of this project is in software engineering, not in technology. However, you will need to ensure that you are reasonably proficient with the selected technology.</li>
+	<li>You can use external libraries, resources etc.. to complete your task. However, when using someone else’s code substantially, please discuss this with your instructor prior to using it. You may not utilize code written by another development team however.</li>
+</ul>
+
+
+
+<h3>Some functional requirements include:</h3>
+
+<ul>
+	<li>The provided configuration files should entirely drive the page.</li>
+	<li>The application should handle malformed files gracefully. The application should never crash. For example, if the input files are malformed or the API is down, the application should gracefully handle this. </li>
+	<li>APIs should be utilized whenever possible/reasonable. </li>
+	<li>XML/Json should be used to build the page. The structure of the page should be entirely driven by these input files.</li>
+	<li>There are a number of input files that can be supported at any time. A main “Configuration” file will dictate the input file, source etc…. However, the page is expected to only support one input file at any given page load.</li>
+	<li>The displayed page will ultimately be reasonably simple (see instructor example).</li>
+</ul>
+
+
+
+<h3>Some Non-functional requirements include:</h3>
+
+
+<ul>
+	<li>You are expected to utilize your team's <a href="https://trello.com/" target="=_blank">Trello</a> board for project management.</li>
+	<li>Utilize <a href="https://github.com/" target="_blank">GitHub</a> for version control.</li>
+	<li>Your application should be entirely hosted on <a href="https://render.com" target="_blank">Render.com</a>. The application should be publicly accessible. </li>
+	<li>Unit testing should be included in your project (speak with customer regarding magnitude & specifics).</li>
+	<li>You should use GitHub issues for defect tracking.</li>
+	<li>You should integrate an automatic testing/build mechanism with your hosting provider.</li>
+	<li>All project artifacts should be accessible to your instructor. They will discuss mechanisms to share them. When you “submit” the application, you will be providing links to your team's Trello, running application on Render, Github repo etc…</li>
+</ul>
+
+
+
+<h2>Project Information</h2>
+<h3>Development Languages</h3>
+<p>Students may select their preferred development language to implement the project. However, the technology stack MUST be approved by the instructor. Due to the nature of the project, the project team is heavily encouraged to select a web-based platform such as Node, Angular, etc…</p>
+
+
+<h3>Hosting Platform</h3>
+<p>Your team will be responsible for finding a free hosting provider for your project. When submitting a product release, you will “submit” the working application to the hosting provider. Your customer (instructor) should merely have to visit the provided URL to utilize the created software. For this project, your team is highly encouraged to utilize <a href="https://render.com" target="_blank">Render</a>. This platform was selected due to its ease of use, being freely available for this project, having existing integrations into Github, and having a significant amount of existing support and documentation in place. Any other potential hosting mechanisms should be discussed with and approved by your instructor.</p>
+
+
+<h1>Deliverables</h1>
+<p>The project deliverables are designed to support your group in incrementally building the application. This includes the support generation of “umbrella” activities. Essentially, these deliverables should support your team in constructing the product in a systematic manner, with regular customer (instructor) input. You should ensure that you include your customer (instructor) during the entire process.
+</p>
+
+
+<h2><a name="A1"></a>Deliverable #1: Support Structure</h2>
+<p>
+	Successful software projects typically require "umbrella" supporting activities. This helps your team manage the project, supports communication and helps with software code development. This deliverable will ensure that your team has begun to implement the necessary project management tools to ensure the project's success. The tools that your team should be using for this project include:
+
+
+<ul>
+	<li>Project Management: Trello</li>
+	<li>Version Control: GitHub</li>
+	<li>Defect Tracking: Github Issues</li>
+	<li>Project Hosting: Render (feel free to discuss with instructor)</li>
+	<ul>
+		<li>Will also support automatic builds & deployments.</li>
+		<li>Should automatically run your created unit tests.</li>
+	</ul>
+
+<li>Specific deliverables: In the appropriate MyCourses submission area complete <a href="project/projectfiles/L3Harris-ProjectSupportDocuments.docx">this</a> template.</li>
+<li>Please make sure that your instructor has access to all of these materials.</li>
+</ul>
+
+
+</p>
+
+
+
+
+<br /><br />
+<h2><a name="A2"></a>Deliverable #2: Project Requirements & Test Plan Tracker</h2>
+<p>
+Project planning is imperative for providing a robust project foundation. This deliverable will provide an initial planning step for your work. All project documents are intended to be “living/breathing” documents that you update throughout the semester as needed, which is expected. While this initial submission is intended to change and evolve throughout the semester, you are still expected to provide robust documentation, with as many considerations as possible.</p>
+
+<ul>
+	<li>You should update your team’s project requirements document. You are expected to work with your customer (instructor) to clarify project requirements.</li>
+	<li>You should create a test plan tracker that you will utilize to demonstrate and evaluate the project's proficiency.</li>
+</ul>
+
+<p>
+I am providing you an incomplete requirements document. Your team is expected to update it as needed. In this specific instance, you should focus on updating the:
+</p>
+
+<ul>
+	<li>Stakeholders</li>
+	<li>Feature Requirements</li>
+	<li>Use Case Diagrams</li>
+	<li>Use Case Descriptions</li>
+</ul>
+
+<p><a href="project/projectfiles/L3-ProjectRequirements.docx">[Link to Requirements Document]</a></p>
+
+
+<h3>Test Plan</h3>
+<ul>
+	<li>Create a Test Plan (based on the provided template).</li>
+	<li>Write an acceptance test case for each of the features being delivered in Release 1.</li>
+	<li>Test cases for the Place Order use case should cover both success and alternate scenarios.</li>
+	<li>At minimum, your test case should reference the feature being tested; pre-conditions required to run the test, a test case description and expected results.</li>
+</ul>
+
+ <p><a href="project/projectfiles/L3Project-TestPlanTracker.xls">[Link to Test Plan Document]</a></p>
+
+<br /><br />
+
+
+<h2><a name="A3"></a>Deliverable #3: Unit Testing</h2>
+<p>
+Deliverable #X: Unit Testing
+Unit testing is a fundamental practice in software development aimed at verifying the correctness of individual units or components of a software application. Each unit test focuses on a small, isolated piece of code, typically a function or method, ensuring it behaves as expected under various conditions. These tests are automated, allowing developers to run them frequently and catch potential issues early in the development process. Unit testing helps improve code quality, facilitates code maintenance, and provides a safety net for refactoring, ensuring that changes do not introduce unintended consequences. Adopting unit testing is a key aspect of Test-Driven Development (TDD), where tests are written before the actual code, guiding developers in designing robust and modular software. Overall, unit testing contributes to building more reliable and maintainable software systems.
+
+</p>
+
+<p>
+	To support your project’s testing, you will create several “best of breed” unit tests for your project. Working with your instructor you should:
+</p>
+
+
+<ol>
+	<li>Identify at least five unit tests that should be created for your application.</li>
+	<li>Create these five unit tests, using "<a href="https://learn.microsoft.com/en-us/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing?view=vs-2022&tabs=csharp" target="_blank">stubs</a>" when necessary.</li>
+	<li>Integrate these tests into your team's automatic build mechanism. For example, when “pushing” code, the unit tests should automatically run.</li>
+</ol>
+
+
+<p>Other Notes:</p>
+<ul>
+	<li>All unit tests should be checked into your team's version control repository.</li>
+	<li>These unit tests should be updated throughout the semester.</li>
+</ul>
+<br /><br />
+
+<h2><a name="A4"></a>Deliverable #4: Release 1 (R1)</h2>
+<p>This initial release will include having several portions of the application functional, while excluding some for future releases (see below). Additionally, this initial release will serve as an initial working foundation for your second upcoming release. While you should remain in regular contact with your customer (instructor), and you should seek clarification whenever possible - your primary deliverables for this Release 1 include:</p>
+
+<ul>
+	<li>Developing the application’s structure.</li>
+	<li>Updating all previous submissions and documentation.</li>
+	<li>A page that is constructed using a single JSON file to provide the page’s structure. You can assume that the file is always perfect and that there is only a single file that you read from. In this order, the page’s contents will include:</li>
+	<ul>
+		<li>A simple textbox</li>
+		<li>An image (you will reference the image’s location only)</li>
+		<li>A dropdown list containing at least 5 items.</li>
+		<li>Any other items specified by your instructor.</li>
+		<li>The reading of this file should occur via a simple API.</li>
+	</ul>
+</ul>
+
+<p>Your team's submission should be:</p>
+<ul>
+<li>"<a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository" target="_blank">Tagged</a> in your version control repository.</li>
+<li>Pushed to your hosting mechanism so that it is accessible through a web browser.</li>
+</ul>
+
+
+<h3>R1 Presentation</h3>
+<p>Your team's presentation should contain the following information:</p>
+
+<ul>
+	<li>This is a technical presentation to other engineers in the company, as such, focus on the planning, design, construction, and testing approaches you used.</li>
+	<li>Each team should plan on 10-12 minutes for the presentation (including any demo) and 5 minutes for questions.</li>
+	<li>It is a good idea to have a few slides to talk off that include an agenda of topics to be covered.</li>
+	<li>Every team member will participate in a significant way in the presentation.</li>
+	<li>Give a short product demo of features you have completed (note that none of the project GUI components need to be shown for this release)</li>
+	<li>Some things you should focus on:</li>
+	<ul>
+		<li>Show some metrics about bug tracking</li>
+		<li>What has the rate of bugs been like. Have they increased or decreased?</li>
+		<li>Number of open bugs. Why are they not resolved</li>
+		<li>Anything else you find interesting....</li>
+	</ul>
+	<li>Your application's primary features. Demonstrate several use cases of your application.</li>
+	<li>How have you utilized the project planning mechanisms (eg Trello, etc.)?</li>
+	<li>The integration into the hosting mechanism (deployments, how automated testing works etc….).</li>
+</ul>
+
+
+<h3>Post Mortem Component</h3>
+<p>Reflect on the team's activities and performance through the project thus far. Capture these reflection thoughts in <a href="project/projectfiles/L3-PostMortem.docx">this</a> template. You may address the items listed in the document, but feel free to add others the team believes significant. Submit the document as directed by your instructor. This is an individual assignment. I am looking for well thought out, and insightful reflections and observations about your team's and personal performances. I'd also like you to elaborate on possible solutions to any described problems. A good rule of thumb is for you to describe at least one area of improvement for every identified point of strength.
+</p>
+
+<p><a href="project/projectfiles/L3-PostMortem.docx">[Link to Post Mortem Template Document]</a> </p>
+<br /><br />
+
+
+<h2><a name="A5"></a>Deliverable #5: Cross-Team Testing</h2>
+<p>Cross-team testing in software engineering refers to the practice of testing software components, features, or systems that involve collaboration and integration between multiple development teams. In larger organizations or complex projects, different teams may be responsible for developing distinct modules or components of the overall software system. Cross-team testing becomes essential when these components need to interact or integrate to form the complete system. For this activity, the project teams will:</p>
+
+<ul>
+	<li>Ensure that their test plans are up to date and the applications are fully accessible on the hosting environment.</li>
+	<li>Teams execute the test plans of their testing partners and return the results of the test plan, along with any additional tests.</li>
+	<li>Teams should indicate in their test plans what test cases are not yet supported.</li>
+	<li>You should feel free to create tests that have not been considered in the test plan tracker/by the other team.</li>
+		<ul>
+		<li>Each team should complete the test plan supplied and minimally add 2-3 additional test cases.</li>
+		</ul>
+	<li>Submit the test plan as directed by your instructor. Include at the bottom of the test plan any notes on what worked, what didn't, and any problems encountered.</li>
+</ul>
+<br /><br />
+
+<h2><a name="A6"></a>Deliverable #6: Release 2</h2>
+<p>This is the final release for your team's project. The project should be in a complete, working state with no defects. All components of the application should be complete and functional. You are still highly encouraged to work with your customer (instructor) regarding specific requirements. Some considerations:</p>
+
+<ul>
+	<li>All source code, documentation etc… should be stored in your team's version control repository with an <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository" target="_blank">R2 tag</a>.</li>
+	<li>All documentation, test plans etc… should be up to date.</li>
+	<li>All "final" source code should be pushed to your team's hosting environment.</li>
+</ul>
+
+
+<h3>Release 2 Presentation</h3>
+<p>Similar presentation as your team did for R1, but your team should place much more emphasis on what you completed, and spend more time on your project demo instead of documentation. Presentations are 15 minutes in length with 5 minutes for questions. The presentation should be based on your Acceptance Test Plan as it validates each functional requirement in your system. The presentation's focus is on user functionality, not design details and development activities. Your team is encouraged to present some of the more “robust” features of your application.</p>
+
+
+<h3>Post Mortem Component</h3>
+
+<p>Your team will conduct a post mortem similar to the first release. Your team should reflect on the team's activities and performance through the project. Capture these reflection thoughts in <a href="project/projectfiles/L3-PostMortem.docx">this</a> template. You may address the items listed in the document, but feel free to add others the team believes significant. Submit the document as directed by your instructor. This is an individual assignment. I am looking for well thought out, and insightful reflections and observations about your team's and personal performances. I'd also like you to elaborate on possible solutions to any described problems. A good rule of thumb is for you to describe at least one area of improvement for every identified point of strength.</p>
+
+<a href="project/projectfiles/L3-PostMortem.docx">[Link to Post Mortem Template Document]</a> 
+
+
+
+
+  </body>
+</html>
