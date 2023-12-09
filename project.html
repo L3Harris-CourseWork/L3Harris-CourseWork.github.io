@@ -82,7 +82,7 @@ The basic flow of the application is:
 		<li>Dropdown box</li>
 		<li>Radio button</li>
 		<li>True/false</li>
-		<li>Image ← only need to provide link to an image.</li>
+		<li>Image ← only need to provide link to an image that is hosted in a different location, you do not need to host the file.</li>
 		<li>Textbox </li>
 		<li>Button</li>
 	</ul>
@@ -96,7 +96,7 @@ The basic flow of the application is:
 
 <ul>
 	<li>You may use whatever technology stack that you would like. The focus of this project is in software engineering, not in technology. However, you will need to ensure that you are reasonably proficient with the selected technology.</li>
-	<li>You can use external libraries, resources etc.. to complete your task. However, when using someone else’s code substantially, please discuss this with your instructor prior to using it. You may not utilize code written by another development team however.</li>
+	<li>You can use external libraries, resources etc.. to complete your task. However, when using someone else's code substantially, please discuss this with your instructor prior to using it. You may not utilize code written by another development team however.</li>
 </ul>
 
 
@@ -104,11 +104,11 @@ The basic flow of the application is:
 <h3>Some functional requirements include:</h3>
 
 <ul>
-	<li>The provided configuration files should entirely drive the page.</li>
+	<li>The provided configuration files should entirely drive the page. Your "reader" should utilize the input configuration file as much as possible for determining page content.</li>
 	<li>The application should handle malformed files gracefully. The application should never crash. For example, if the input files are malformed or the API is down, the application should gracefully handle this. </li>
-	<li>APIs should be utilized whenever possible/reasonable. </li>
-	<li>XML/Json should be used to build the page. The structure of the page should be entirely driven by these input files.</li>
-	<li>There are a number of input files that can be supported at any time. A main “Configuration” file will dictate the input file, source etc…. However, the page is expected to only support one input file at any given page load.</li>
+	<li>APIs should be utilized whenever possible/reasonable. You are encouraged to discuss the architecture with your instructor.</li>
+	<li>XML/JSON should be used to build the page. The structure of the page should be entirely driven by these input files.</li>
+	<li>There are a number of input files that can be supported at any time. A main "Configuration" file will dictate the input file, source etc…. However, the page is expected to only support one input file at any given page load.</li>
 	<li>The displayed page will ultimately be reasonably simple (see instructor example).</li>
 </ul>
 
@@ -122,9 +122,9 @@ The basic flow of the application is:
 	<li>Utilize <a href="https://github.com/" target="_blank">GitHub</a> for version control.</li>
 	<li>Your application should be entirely hosted on <a href="https://render.com" target="_blank">Render.com</a>. The application should be publicly accessible. </li>
 	<li>Unit testing should be included in your project (speak with customer regarding magnitude & specifics).</li>
-	<li>You should use GitHub issues for defect tracking.</li>
+	<li>You should use <a href="https://github.com/features/issues" target="_blank">GitHub issues</a> for defect tracking.</li>
 	<li>You should integrate an automatic testing/build mechanism with your hosting provider.</li>
-	<li>All project artifacts should be accessible to your instructor. They will discuss mechanisms to share them. When you “submit” the application, you will be providing links to your team's Trello, running application on Render, Github repo etc…</li>
+	<li>All project artifacts should be accessible to your instructor. They will discuss mechanisms to share them. When you "submit" the application, you will be providing links to your team's Trello, running application on Render, GitHub repository etc…</li>
 </ul>
 
 
@@ -135,7 +135,7 @@ The basic flow of the application is:
 
 
 <h3>Hosting Platform</h3>
-<p>Your team will be responsible for finding a free hosting provider for your project. When submitting a product release, you will “submit” the working application to the hosting provider. Your customer (instructor) should merely have to visit the provided URL to utilize the created software. For this project, your team is highly encouraged to utilize <a href="https://render.com" target="_blank">Render</a>. This platform was selected due to its ease of use, being freely available for this project, having existing integrations into Github, and having a significant amount of existing support and documentation in place. Any other potential hosting mechanisms should be discussed with and approved by your instructor.</p>
+	<p>For this project, your team is highly encouraged to utilize <a href="https://render.com" target="_blank">Render</a>. This platform was selected due to its ease of use, being freely available for this project, having existing integrations into Github, and having a significant amount of existing support and documentation in place. Your customer (instructor) should merely have to visit the provided URL to utilize the created software.</p>
 
 
 <h1>Deliverables</h1>
@@ -151,14 +151,14 @@ The basic flow of the application is:
 <ul>
 	<li>Project Management: Trello</li>
 	<li>Version Control: GitHub</li>
-	<li>Defect Tracking: Github Issues</li>
+	<li>Defect Tracking: GitHub Issues</li>
 	<li>Project Hosting: Render (feel free to discuss with instructor)</li>
 	<ul>
 		<li>Will also support automatic builds & deployments.</li>
 		<li>Should automatically run your created unit tests.</li>
 	</ul>
 
-<li>Specific deliverables: In the appropriate MyCourses submission area complete <a href="project/projectfiles/L3Harris-ProjectSupportDocuments.docx">this</a> template.</li>
+<li>Specific deliverables: In the appropriate MyCourses submission area complete <a href="project/projectfiles/L3Harris-ProjectSupportDocuments.docx">this</a> template. The purpose of this document is to provide a centralized, "one stop shop" for sharing all project information.</li>
 <li>Please make sure that your instructor has access to all of these materials.</li>
 </ul>
 
@@ -174,7 +174,7 @@ The basic flow of the application is:
 Project planning is imperative for providing a robust project foundation. This deliverable will provide an initial planning step for your work. All project documents are intended to be “living/breathing” documents that you update throughout the semester as needed, which is expected. While this initial submission is intended to change and evolve throughout the semester, you are still expected to provide robust documentation, with as many considerations as possible.</p>
 
 <ul>
-	<li>You should update your team’s project requirements document. You are expected to work with your customer (instructor) to clarify project requirements.</li>
+	<li>You should update your team's project requirements document. You are expected to work with your customer (instructor) to clarify project requirements.</li>
 	<li>You should create a test plan tracker that you will utilize to demonstrate and evaluate the project's proficiency.</li>
 </ul>
 
@@ -213,7 +213,7 @@ Unit testing is a fundamental practice in software development aimed at verifyin
 </p>
 
 <p>
-	To support your project’s testing, you will create several “best of breed” unit tests for your project. Working with your instructor you should:
+	To support your project's testing, you will create several “best of breed” unit tests for your project. Working with your instructor you should:
 </p>
 
 
@@ -235,12 +235,12 @@ Unit testing is a fundamental practice in software development aimed at verifyin
 <p>This initial release will include having several portions of the application functional, while excluding some for future releases (see below). Additionally, this initial release will serve as an initial working foundation for your second upcoming release. While you should remain in regular contact with your customer (instructor), and you should seek clarification whenever possible - your primary deliverables for this Release 1 include:</p>
 
 <ul>
-	<li>Developing the application’s structure.</li>
+	<li>Developing the application's structure.</li>
 	<li>Updating all previous submissions and documentation.</li>
-	<li>A page that is constructed using a single JSON file to provide the page’s structure. You can assume that the file is always perfect and that there is only a single file that you read from. In this order, the page’s contents will include:</li>
+	<li>A page that is constructed using a single JSON file to provide the page's structure. You can assume that the file is always perfect and that there is only a single file that you read from. In this order, the page's contents will include:</li>
 	<ul>
 		<li>A simple textbox</li>
-		<li>An image (you will reference the image’s location only)</li>
+		<li>An image (you will reference the image's location only)</li>
 		<li>A dropdown list containing at least 5 items.</li>
 		<li>Any other items specified by your instructor.</li>
 		<li>The reading of this file should occur via a simple API.</li>
