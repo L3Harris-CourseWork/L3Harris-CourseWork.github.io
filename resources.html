@@ -22,10 +22,6 @@
   document.title = course_number + "" + section + " " + course_title; // No need to change this
   </script><!-- Feel free to add custom styles if you like, but we'd rather put it in SEDepartment.css if at all possible -->
   
-
-
-
-
 </head>
 
 
@@ -50,30 +46,91 @@
         <li><a href="index.html">Schedule</a></li>
         <li><a href="syllabus.html">Syllabus</a></li>
         <li><a href="project.html">Project</a></li>
-		<li><a href="resources.html">Resources</a></li>
-		<li><a href="https://drive.google.com/drive/folders/1iVlvBL0HSFLZUcB8PW76UkngFz9paKDG?usp=share_link" target="_blank">Lecture Slides</a></li>
+		    <li><a href="resources.html">Resources</a></li>
+		    <li><a href="https://drive.google.com/drive/folders/1iVlvBL0HSFLZUcB8PW76UkngFz9paKDG?usp=share_link" target="_blank">Lecture Slides</a></li>
         
     </ul>
   </nav>
   <article>
 
 <h1>Course Resources</h1>
+<p>This page contains resources that you may use throughout the course, typically for the project component.</p>
+
+<h2>API Resources</h2>
+<p>Several API resources are provided to get you started. These simple examples are intended to get you started for your project.</p>
+
+<ul>
+  <li>API Examples: <a href="https://l3harriscourseexamples.onrender.com">Running</a> | <a href="https://github.com/L3Harris-CourseWork/CourseExamples">Source Code</a></li>
+
+</ul>
 
 
 <h2>Exam Study Guides</h2>
 
+<p>You may use these guides to help you study for the exam. While there is no replacement for reviewing course materials and performing the expected readings, these study guides are a highly recommended starting point.</p>
 
-links to tutorials
-Course Github page
-study guides
+<ul>
+  <li>Exam 1 Study Guide: <a href="resources/exams/studyguides/Exam1StudyGuide-NoAnswers.pdf">Study Guide</a> | <a href="resources/exams/studyguides/Exam1StudyGuide-Answers.pdf">Key</a></li>
+  <li>Exam 1 Study Guide: <a href="resources/exams/studyguides/Exam2StudyGuide-NoAnswers.pdf">Study Guide</a> | <a href="resources/exams/studyguides/Exam2StudyGuide-Answers.pdf">Key</a></li>
 
-
-API Tutorials
-
-
-Unit testing
+</ul>
 
 
+
+
+<h2>Technical Resources</h2>
+<p></p>
+
+
+<h3>Unit Testing</h3>
+<p>Software development projects involve testing at various stages, with software developers taking responsibility for unit testing at the class level. When code is written within a class, developers are tasked with creating unit tests to validate code functionality for both normal and error scenarios. These tests should be executed using a testing framework like JUnit, which facilitates test execution and result verification. To ensure thorough testing, each class should be tested in isolation, necessitating the control of all dependencies the tested class relies on with other objects. Object mocking is a technique used to create objects that the tested class utilizes during testing. Mocking frameworks, such as Mockito, aid in defining mock objects and their expected behaviors when methods are called. Additionally, these frameworks enable tests to verify if methods were called the expected number of times during testing. Your team will be expected to develop unit tests for all non-trivial classes within your project.</p>
+
+
+<p>The Unit testing technology that you select will obviously be highly dependent on the technology that you choose to implement your project with. However, be sure that the unit testing technology will properly integrate with GitHub and the hosting platform Render. You should additionally feel free to search for other possible unit testing technologies as you desire as there are many that are not encapsulated in this list.</p>
+
+
+<ul>
+  <li><a href="http://junit.org/" target="_blank">JUnit</a></li>
+  <li><a href="https://jmockit.github.io/" target="_blank">JMockit</a></li>
+  <!--
+  <li><a href="http://emma.sourceforge.net/" target="_blank">Emma</a></li>
+  <li><a href="http://simpletest.sourceforge.net/" target="_blank">SimpleTest</a></li>
+-->
+  <li><a href="http://www.typemock.com/" target="_blank">Typemock</a></li>
+  <li><a href="http://karma-runner.github.io/0.13/index.html target="_blank">Karma</a></li>
+  <li><a href="http://jasmine.github.io/" target="_blank">Jasmine</a></li>
+  <li><a href="https://mochajs.org/" target="_blank">Mocha</a></li>
+  <li><a href="https://www.cloudbees.com/blog/unit-testing-in-ruby" target="_blank">Ruby Unit Testing</a></li>
+</ul>
+
+
+<h3>GitHub Tools</h3>
+<p>Your team will be using GitHub as your version control repository. There are a wide range of techniques and tools for working with GitHub. There are tools with robust GUIs, or you may choose to use a simple command line interface. While the tool you use to integrate with GitHub is your decision, it is VERY HIGHLY recommended that you DO NOT only interact with GitHub through their web interface. This will prove to be cumbersome and fraught with challenges.</p>
+
+<ul>
+  <li><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> -  GitHub Desktop is an official GitHub client that provides a graphical interface for managing your repositories. It's user-friendly and suitable for both beginners and experienced developers.</li>
+  <li><a href="https://www.gitkraken.com/" target="_blank">GitKraken</a> - GitKraken is a cross-platform Git client that supports GitHub. It has a visually appealing interface and offers features like a drag-and-drop Git branching system.</li>
+  <li><a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a> - A free Git client that works with GitHub repositories. It provides a visual representation of branches and their commits.</li>
+  <li><a href="https://gitextensions.github.io/" target="_blank">GitExtensions</a> - A Git client for Windows that integrates with GitHub. It provides a GUI for Git, including features like visualizing the commit history.</li>
+  <li><a href="https://code.visualstudio.com/" target="_blank">VSCode</a> - A popular code editor that has built-in Git integration, making it easy to work with GitHub repositories directly from the editor.</li>
+  <li><a href="https://gitup.co/" target="_blank">GitUp</a> - A Git interface for macOS that focuses on simplicity and a visual representation of the Git history.</li>
+  <li><a href="https://tortoisegit.org/" target="_blank">TortoiseGit</a> - A Windows Shell Interface to Git. It integrates with the file explorer, allowing you to perform Git operations through context menus.</li>
+  <li><a href="https://www.git-tower.com/" target="_blank">Tower</a> - A Git client for Mac and Windows that provides a powerful interface for interacting with Git repositories, including GitHub.</li>
+
+
+
+</ul>
+
+
+<h3>GIT Tutorials</h3>
+<p>There are numerous GIT/GitHub tutorials that are available. Below are a few that are recommended, but the student should feel free to utilize whatever tutorials they find most beneficial.</p>
+
+
+<ul>
+  <li><a href="https://docs.github.com/en/get-started/quickstart/hello-world" target="_blank">GitHub Docs</a></li>
+  <li><a href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" target="_blank">Hubspot GitHub introduction</a></li>
+  <li><a href="https://www.datacamp.com/tutorial/github-and-git-tutorial-for-beginners" target="_blank">Datacamp Git/GitHub Tutorial</a></li>
+</ul>
 
 
 
